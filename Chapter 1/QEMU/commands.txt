@@ -17,6 +17,9 @@
   -append "root=LABEL=rootfs console=ttyS0" \
   -nographic
 
+------------------
+# Working solution
+
 https://canonical-ubuntu-boards.readthedocs-hosted.com/en/latest/how-to/qemu-riscv/
 
 qemu-system-riscv64 \
@@ -36,5 +39,9 @@ qemu-riscv64-static -g 1234 ./hello & gdb-multiarch ./hello
 
 ./run-qemu.sh
 ub bub
-
 ctrl+a, x - exit
+
+-------------
+
+# Outdated, but maybe can be useful at some extent:
+https://www.reddit.com/r/RISCV/comments/11r3m2y/fyi_steps_for_ubuntu_riscv64_running_on_qemu/
